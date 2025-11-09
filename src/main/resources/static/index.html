@@ -8,22 +8,47 @@
 <body>
     <h1>Welcome to Student Management App</h1>
     <form action="add" method="post">
-        <label for="name">
+        <label>
             Enter the Student's Name:
-            <input type="text" required id="name">
+            <input type="text" required name="name">
         </label>
         <br><br>
-        <label for ="age">
+        <label>
             Enter the Student's Age:
-            <input type="number" required id = "age">
+            <input type="number" required name="age" min="1">
         </label>
         <br><br>
-        <label for="branch">
+        <label>
             Enter the Student's branch:
-            <input type="text" required id="branch">
+            <input type="text" required name="branch">
         </label>
         <br><br>
         <input type="submit">
+    </form>
+
+    <h2>Update Student Information</h2>
+    <form action="update" method="post">
+        <label for="id">
+            Enter the Student's ID:
+            <input type="number" required id="id" name="id" min="1">
+        </label>
+        <br><br>
+        <label>
+            Enter the New Name:
+            <input type="text" required name="name">
+        </label>
+        <br><br>
+        <label>
+            Enter the New Age:
+            <input type="number" required name="age" min="1">
+        </label>
+        <br><br>
+        <label>
+            Enter the New Branch:
+            <input type="text" required name="branch">
+        </label>
+        <br><br>
+        <input type="submit" value="Update">
     </form>
 </body>
 </html>
