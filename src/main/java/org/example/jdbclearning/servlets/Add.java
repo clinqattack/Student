@@ -13,7 +13,6 @@ import java.sql.DriverManager;
 @WebServlet(name = "Add", urlPatterns = "/add")
 public class Add extends HttpServlet {
     public void init() throws ServletException {
-        Connection con = DriverManager.getConnection("jdbc", "root", "")
     }
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
